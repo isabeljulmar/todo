@@ -1,0 +1,11 @@
+<h1>Todo List</h1>
+<% if @todo.any? %>
+	<h2><%= @todo.title %></h2>
+	<p><%= @todo.description %></p>
+
+	<% else %>
+
+		<h2>No todo items</h2>
+	<% end %>
+
+<%= link_to 'New Item', new_todos_path %>
